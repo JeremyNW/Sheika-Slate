@@ -13,6 +13,8 @@
 		1F087C6226F37A9300190A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F087C6026F37A9300190A33 /* Main.storyboard */; };
 		1F087C6426F37A9300190A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F087C6326F37A9300190A33 /* Assets.xcassets */; };
 		1F087C6726F37A9300190A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F087C6526F37A9300190A33 /* LaunchScreen.storyboard */; };
+		1F087C6F26F3822E00190A33 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F087C6E26F3822E00190A33 /* Item.swift */; };
+		1F087C7126F3832D00190A33 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F087C7026F3832D00190A33 /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1F087C6326F37A9300190A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F087C6626F37A9300190A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F087C6826F37A9300190A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F087C6E26F3822E00190A33 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1F087C7026F3832D00190A33 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				1F087C6326F37A9300190A33 /* Assets.xcassets */,
 				1F087C6526F37A9300190A33 /* LaunchScreen.storyboard */,
 				1F087C6826F37A9300190A33 /* Info.plist */,
+				1F087C6E26F3822E00190A33 /* Item.swift */,
+				1F087C7026F3832D00190A33 /* ItemManager.swift */,
 			);
 			path = "Sheika Slate";
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F087C6F26F3822E00190A33 /* Item.swift in Sources */,
+				1F087C7126F3832D00190A33 /* ItemManager.swift in Sources */,
 				1F087C5F26F37A9300190A33 /* ViewController.swift in Sources */,
 				1F087C5B26F37A9300190A33 /* AppDelegate.swift in Sources */,
 				1F087C5D26F37A9300190A33 /* SceneDelegate.swift in Sources */,

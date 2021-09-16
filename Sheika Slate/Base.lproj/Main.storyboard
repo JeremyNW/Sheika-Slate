@@ -26,12 +26,21 @@
                                 <rect key="frame" x="0.0" y="502" width="414" height="360"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="au6-TO-tCn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" textLabel="jXs-gj-hGb" style="IBUITableViewCellStyleDefault" id="au6-TO-tCn">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="au6-TO-tCn" id="fAb-iD-fOL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jXs-gj-hGb">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -51,8 +60,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="ifX-7L-py3">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="JOa-zm-agV">
-                            <rect key="frame" x="35.5" y="6" width="343" height="32"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="JOa-zm-agV">
+                            <rect key="frame" x="12" y="6" width="340" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Equipment"/>
@@ -60,8 +69,20 @@
                                 <segment title="Monsters"/>
                                 <segment title="Treasure"/>
                             </segments>
+                            <connections>
+                                <action selector="itemCategoryValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bfl-yG-Obh"/>
+                            </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" image="questionmark.circle" catalog="system" id="BOe-jj-nB3">
+                            <connections>
+                                <action selector="descriptionButtonTapped:" destination="BYZ-38-t0r" id="3zN-75-ndX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="itemImageView" destination="BPX-MG-OxW" id="5En-eE-bsJ"/>
+                        <outlet property="itemTableView" destination="M5C-jt-WvG" id="SEA-hc-8Yv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,6 +108,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
