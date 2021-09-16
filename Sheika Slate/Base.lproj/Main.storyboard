@@ -80,6 +80,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="categorySegmentedControl" destination="JOa-zm-agV" id="BqS-zK-3lc"/>
                         <outlet property="itemImageView" destination="BPX-MG-OxW" id="5En-eE-bsJ"/>
                         <outlet property="itemTableView" destination="M5C-jt-WvG" id="SEA-hc-8Yv"/>
                     </connections>
